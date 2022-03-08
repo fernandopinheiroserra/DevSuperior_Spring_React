@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --white: #fff;
+    --text-gray: #4a4a4a;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+html,
+.body {
+    background-color: var(--bg-gray);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+}
+
+a,
+a:hover {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: unset;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav a,
+nav a:hover {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: unset;
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
+}
+
+#dsmovie-card-list {
+    padding: 40px;
+}
+
+.dsmovie-card {
+    width: 100%;
+    height: min-content;
+    background-color: var(--white);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #9e9e9e;
+}
+
+.dsmovie-card img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+    height: 170px;
+}
+
+.dsmovie-card-description {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    min-height: 170px;
+    max-height: 200px;
+}
+
+.dsmovie-card-description h3 {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dsmovie-btn,
+.dsmovie-btn:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
