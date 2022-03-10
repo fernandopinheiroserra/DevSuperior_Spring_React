@@ -28,3 +28,7 @@ https://www.figma.com/file/hyovBMIxwrn2Bb5MZLrxHL/DSMovie4
 
 ![Parabéns!](https://raw.githubusercontent.com/devsuperior/bds-assets/main/img/trophy.png)
 
+## Segunda etapa:
+
+![Parabéns!](https://raw.githubusercontent.com/devsuperior/bds-assets/main/img/trophy.png)
+
