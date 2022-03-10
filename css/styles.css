@@ -4,6 +4,8 @@
     --color-primary: #1a1c9e;
     --white: #fff;
     --text-gray: #4a4a4a;
+    --text-light-gray: #aaa;
+    --star-yellow: #ffbb3a;
 }
 
 * {
@@ -97,15 +99,39 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px 20px 20px;
-    min-height: 170px;
-    max-height: 200px;
+    min-height: 220px;
+    max-height: 220px;
 }
 
 .dsmovie-card-description h3 {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
+}
+
+.dsmovie-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-card-description-bottom h4{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+
+.dsmovie-card-description-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light-gray);
+    margin-bottom: 10px;
+}
+
+.dsmovie-card-description-bottom img{
+    width: 22px;
+    height: 22px;
 }
 
 .dsmovie-btn,
@@ -128,21 +154,6 @@ nav a:hover {
     max-width: 480px !important;
 }
 
-.dsmovie-form-main {
-    width: 100%;
-    height: fit-content;
-    background-color: var(--white);
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 1px 1px 10px #9e9e9e;
-}
-
-.dsmovie-form-main img {
-    width: 100%;
-    border-radius: 4px 4px 0 0;
-    object-fit: cover;
-}
-
 .dsmovie-form-description {
     background-color: var(--white);
     padding: 20px;
@@ -152,6 +163,34 @@ nav a:hover {
     border-radius: 0 0 8px 8px;
 }
 
+.dsmovie-form-description h3{
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.dsmovie-form {
+    width: 100%;
+}
+
 img .dsmovie-form {
     width: 100%;
+}
+
+.dsmovie-form-group {
+    margin-bottom: 10px;
+}
+
+.dsmovie-form-group label{
+    font-size: 12px;
+    color: var(--text-light-gray);
+}
+
+.dsmovie-form-btn-container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
