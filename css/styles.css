@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px;
+    padding: 0 10px;
 }
 
 .dsmovie-card {
@@ -82,7 +82,7 @@ nav a:hover {
     background-color: var(--white);
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 1px 1px 10px #9e9e9e;
+    box-shadow: 1px 1px 2px var(--text-light-gray);
 }
 
 .dsmovie-card img {
@@ -116,20 +116,20 @@ nav a:hover {
     align-items: center;
 }
 
-.dsmovie-card-description-bottom h4{
+.dsmovie-card-description-bottom h4 {
     font-size: 16px;
     font-weight: 700;
     color: var(--star-yellow);
 }
 
-.dsmovie-card-description-bottom p{
+.dsmovie-card-description-bottom p {
     font-size: 12px;
     font-weight: 400;
     color: var(--text-light-gray);
     margin-bottom: 10px;
 }
 
-.dsmovie-card-description-bottom img{
+.dsmovie-card-description-bottom img {
     width: 22px;
     height: 22px;
 }
@@ -163,7 +163,7 @@ nav a:hover {
     border-radius: 0 0 8px 8px;
 }
 
-.dsmovie-form-description h3{
+.dsmovie-form-description h3 {
     margin-bottom: 20px;
     font-size: 13px;
     font-weight: 700;
@@ -182,7 +182,7 @@ img .dsmovie-form {
     margin-bottom: 10px;
 }
 
-.dsmovie-form-group label{
+.dsmovie-form-group label {
     font-size: 12px;
     color: var(--text-light-gray);
 }
@@ -193,4 +193,54 @@ img .dsmovie-form {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary);
+    box-shadow: 1px 1px 2px var(--text-light-gray);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(67%) saturate(3875%) hue-rotate(230deg) brightness(95%) contrast(99%);
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+    box-shadow: none;
+    background-color: var(--bg-gray);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
 }
